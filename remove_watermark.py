@@ -48,8 +48,8 @@ def remove_evil_links(pdf_data):
 
     # Remove the actual links
     # (link elements which are assigned to the annotations)
-    new_data = new_data.replace(binascii.hexlify(b'http://www.allitebooks.org/'), b'')
-    new_data = new_data.replace(binascii.hexlify(b'www.allitebooks.org'), b'')
+    new_data = new_data.replace(binascii.hexlify(b'http://www.allitebooks.com/'), b'')
+    new_data = new_data.replace(binascii.hexlify(b'www.allitebooks.com'), b'')
     return binascii.unhexlify(new_data)
 
 
